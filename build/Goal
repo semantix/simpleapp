@@ -1,0 +1,177 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.identifier": {
+      "@id": "fhir:Goal.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.lifecycleStatus": {
+      "@id": "fhir:Goal.lifecycleStatus"
+    },
+    "Goal.achievementStatus": {
+      "@id": "fhir:Goal.achievementStatus",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.category": {
+      "@id": "fhir:Goal.category",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.continuous": {
+      "@id": "fhir:Goal.continuous",
+      "@context": "http://uu3.org/fhir/boolean-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.priority": {
+      "@id": "fhir:Goal.priority",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.description": {
+      "@id": "fhir:Goal.description",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.subject": {
+      "@id": "fhir:Goal.subject",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.startDate": {
+      "@id": "fhir:Goal.startDate",
+      "@context": "http://uu3.org/fhir/date-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.startCodeableConcept": {
+      "@id": "fhir:Goal.startCodeableConcept",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.target": {
+      "@id": "fhir:Goal.target",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.measure": {
+          "@id": "fhir:Goal.target.measure",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.detailQuantity": {
+          "@id": "fhir:Goal.target.detailQuantity",
+          "@context": "http://uu3.org/fhir/Quantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.detailRange": {
+          "@id": "fhir:Goal.target.detailRange",
+          "@context": "http://uu3.org/fhir/Range-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.detailCodeableConcept": {
+          "@id": "fhir:Goal.target.detailCodeableConcept",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.detailString": {
+          "@id": "fhir:Goal.target.detailString",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.detailBoolean": {
+          "@id": "fhir:Goal.target.detailBoolean",
+          "@context": "http://uu3.org/fhir/boolean-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.detailInteger": {
+          "@id": "fhir:Goal.target.detailInteger",
+          "@context": "http://uu3.org/fhir/integer-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.detailRatio": {
+          "@id": "fhir:Goal.target.detailRatio",
+          "@context": "http://uu3.org/fhir/Ratio-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.dueDate": {
+          "@id": "fhir:Goal.target.dueDate",
+          "@context": "http://uu3.org/fhir/date-R4-jsonld-1.1-context.jsonld"
+        },
+        "Goal.target.dueDuration": {
+          "@id": "fhir:Goal.target.dueDuration",
+          "@context": "http://uu3.org/fhir/Duration-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Goal.statusDate": {
+      "@id": "fhir:Goal.statusDate",
+      "@context": "http://uu3.org/fhir/date-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.statusReason": {
+      "@id": "fhir:Goal.statusReason",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.expressedBy": {
+      "@id": "fhir:Goal.expressedBy",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.addresses": {
+      "@id": "fhir:Goal.addresses",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.note": {
+      "@id": "fhir:Goal.note",
+      "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.outcomeCode": {
+      "@id": "fhir:Goal.outcomeCode",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Goal.outcomeReference": {
+      "@id": "fhir:Goal.outcomeReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.url": {
+      "@id": "fhir:Extension.url",
+      "@context": "http://uu3.org/fhir/url-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueBase64Binary": {
+      "@id": "fhir:Extension.valueBase64Binary",
+      "@context": "http://uu3.org/fhir/base64Binary-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueBoolean": {
+      "@id": "fhir:Extension.valueBoolean",
+      "@context": "http://uu3.org/fhir/boolean-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueCanonical": {
+      "@id": "fhir:Extension.valueCanonical",
+      "@context": "http://uu3.org/fhir/canonical-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueCode": {
+      "@id": "fhir:Extension.valueCode",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueDate": {
+      "@id": "fhir:Extension.valueDate",
+      "@context": "http://uu3.org/fhir/date-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueDateTime": {
+      "@id": "fhir:Extension.valueDateTime",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueDecimal": {
+      "@id": "fhir:Extension.valueDecimal",
+      "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueId": {
+      "@id": "fhir:Extension.valueId",
+      "@context": "http://uu3.org/fhir/id-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueInstant": {
+      "@id": "fhir:Extension.valueInstant",
+      "@context": "http://uu3.org/fhir/instant-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueInteger": {
+      "@id": "fhir:Extension.valueInteger",
+      "@context": "http://uu3.org/fhir/integer-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueMarkdown": {
+      "@id": "fhir:Extension.valueMarkdown",
+      "@context": "http://uu3.org/fhir/markdown-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueOid": {
+      "@id": "fhir:Extension.valueOid",
+      "@context": "http://uu3.org/fhir/oid-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valuePositiveInt": {
+      "@id": "fhir:Extension.valuePositiveInt",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueString": {
+      "@id": "fhir:Extension.valueString",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueTime": {
+      "@id": "fhir:Extension.valueTime",
+      "@context": "http://uu3.org/fhir/time-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueUnsignedInt": {
+      "@id": "fhir:Extension.valueUnsignedInt",
+      "@context": "http://uu3.org/fhir/unsignedInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueUri": {
+      "@id": "fhir:Extension.valueUri",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueUrl": {
+      "@id": "fhir:Extension.valueUrl",
+      "@context": "http://uu3.org/fhir/url-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueUuid": {
+      "@id": "fhir:Extension.valueUuid",
+      "@context": "http://uu3.org/fhir/uuid-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueAddress": {
+      "@id": "fhir:Extension.valueAddress",
+      "@context": "http://uu3.org/fhir/Address-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueAge": {
+      "@id": "fhir:Extension.valueAge",
+      "@context": "http://uu3.org/fhir/Age-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueAnnotation": {
+      "@id": "fhir:Extension.valueAnnotation",
+      "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueAttachment": {
+      "@id": "fhir:Extension.valueAttachment",
+      "@context": "http://uu3.org/fhir/Attachment-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueCodeableConcept": {
+      "@id": "fhir:Extension.valueCodeableConcept",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueCoding": {
+      "@id": "fhir:Extension.valueCoding",
+      "@context": "http://uu3.org/fhir/Coding-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueContactPoint": {
+      "@id": "fhir:Extension.valueContactPoint",
+      "@context": "http://uu3.org/fhir/ContactPoint-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueCount": {
+      "@id": "fhir:Extension.valueCount",
+      "@context": "http://uu3.org/fhir/Count-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueDistance": {
+      "@id": "fhir:Extension.valueDistance",
+      "@context": "http://uu3.org/fhir/Distance-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueDuration": {
+      "@id": "fhir:Extension.valueDuration",
+      "@context": "http://uu3.org/fhir/Duration-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueHumanName": {
+      "@id": "fhir:Extension.valueHumanName",
+      "@context": "http://uu3.org/fhir/HumanName-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueIdentifier": {
+      "@id": "fhir:Extension.valueIdentifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueMoney": {
+      "@id": "fhir:Extension.valueMoney",
+      "@context": "http://uu3.org/fhir/Money-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valuePeriod": {
+      "@id": "fhir:Extension.valuePeriod",
+      "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueQuantity": {
+      "@id": "fhir:Extension.valueQuantity",
+      "@context": "http://uu3.org/fhir/Quantity-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueRange": {
+      "@id": "fhir:Extension.valueRange",
+      "@context": "http://uu3.org/fhir/Range-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueRatio": {
+      "@id": "fhir:Extension.valueRatio",
+      "@context": "http://uu3.org/fhir/Ratio-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueReference": {
+      "@id": "fhir:Extension.valueReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueSampledData": {
+      "@id": "fhir:Extension.valueSampledData",
+      "@context": "http://uu3.org/fhir/SampledData-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueSignature": {
+      "@id": "fhir:Extension.valueSignature",
+      "@context": "http://uu3.org/fhir/Signature-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueTiming": {
+      "@id": "fhir:Extension.valueTiming",
+      "@context": "http://uu3.org/fhir/Timing-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueContactDetail": {
+      "@id": "fhir:Extension.valueContactDetail",
+      "@context": "http://uu3.org/fhir/ContactDetail-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueContributor": {
+      "@id": "fhir:Extension.valueContributor",
+      "@context": "http://uu3.org/fhir/Contributor-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueDataRequirement": {
+      "@id": "fhir:Extension.valueDataRequirement",
+      "@context": "http://uu3.org/fhir/DataRequirement-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueExpression": {
+      "@id": "fhir:Extension.valueExpression",
+      "@context": "http://uu3.org/fhir/Expression-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueParameterDefinition": {
+      "@id": "fhir:Extension.valueParameterDefinition",
+      "@context": "http://uu3.org/fhir/ParameterDefinition-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueRelatedArtifact": {
+      "@id": "fhir:Extension.valueRelatedArtifact",
+      "@context": "http://uu3.org/fhir/RelatedArtifact-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueTriggerDefinition": {
+      "@id": "fhir:Extension.valueTriggerDefinition",
+      "@context": "http://uu3.org/fhir/TriggerDefinition-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueUsageContext": {
+      "@id": "fhir:Extension.valueUsageContext",
+      "@context": "http://uu3.org/fhir/UsageContext-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueDosage": {
+      "@id": "fhir:Extension.valueDosage",
+      "@context": "http://uu3.org/fhir/Dosage-R4-jsonld-1.1-context.jsonld"
+    },
+    "Extension.valueMeta": {
+      "@id": "fhir:Extension.valueMeta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

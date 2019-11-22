@@ -1,0 +1,153 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.identifier": {
+      "@id": "fhir:DetectedIssue.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.status": {
+      "@id": "fhir:DetectedIssue.status"
+    },
+    "DetectedIssue.code": {
+      "@id": "fhir:DetectedIssue.code",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.severity": {
+      "@id": "fhir:DetectedIssue.severity"
+    },
+    "DetectedIssue.patient": {
+      "@id": "fhir:DetectedIssue.patient",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.identifiedDateTime": {
+      "@id": "fhir:DetectedIssue.identifiedDateTime",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.identifiedPeriod": {
+      "@id": "fhir:DetectedIssue.identifiedPeriod",
+      "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.author": {
+      "@id": "fhir:DetectedIssue.author",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.implicated": {
+      "@id": "fhir:DetectedIssue.implicated",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.evidence": {
+      "@id": "fhir:DetectedIssue.evidence",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "DetectedIssue.evidence.code": {
+          "@id": "fhir:DetectedIssue.evidence.code",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "DetectedIssue.evidence.detail": {
+          "@id": "fhir:DetectedIssue.evidence.detail",
+          "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "DetectedIssue.detail": {
+      "@id": "fhir:DetectedIssue.detail",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.reference": {
+      "@id": "fhir:DetectedIssue.reference",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "DetectedIssue.mitigation": {
+      "@id": "fhir:DetectedIssue.mitigation",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "DetectedIssue.mitigation.action": {
+          "@id": "fhir:DetectedIssue.mitigation.action",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "DetectedIssue.mitigation.date": {
+          "@id": "fhir:DetectedIssue.mitigation.date",
+          "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+        },
+        "DetectedIssue.mitigation.author": {
+          "@id": "fhir:DetectedIssue.mitigation.author",
+          "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

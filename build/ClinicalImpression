@@ -1,0 +1,153 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.identifier": {
+      "@id": "fhir:ClinicalImpression.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.status": {
+      "@id": "fhir:ClinicalImpression.status"
+    },
+    "ClinicalImpression.statusReason": {
+      "@id": "fhir:ClinicalImpression.statusReason",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.description": {
+      "@id": "fhir:ClinicalImpression.description",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.subject": {
+      "@id": "fhir:ClinicalImpression.subject",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.encounter": {
+      "@id": "fhir:ClinicalImpression.encounter",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.effectiveDateTime": {
+      "@id": "fhir:ClinicalImpression.effectiveDateTime",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.effectivePeriod": {
+      "@id": "fhir:ClinicalImpression.effectivePeriod",
+      "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.date": {
+      "@id": "fhir:ClinicalImpression.date",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.performer": {
+      "@id": "fhir:ClinicalImpression.performer",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.previous": {
+      "@id": "fhir:ClinicalImpression.previous",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.problem": {
+      "@id": "fhir:ClinicalImpression.problem",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.protocol": {
+      "@id": "fhir:ClinicalImpression.protocol",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.summary": {
+      "@id": "fhir:ClinicalImpression.summary",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.finding": {
+      "@id": "fhir:ClinicalImpression.finding",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "ClinicalImpression.finding.itemCodeableConcept": {
+          "@id": "fhir:ClinicalImpression.finding.itemCodeableConcept",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "ClinicalImpression.finding.itemReference": {
+          "@id": "fhir:ClinicalImpression.finding.itemReference",
+          "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+        },
+        "ClinicalImpression.finding.basis": {
+          "@id": "fhir:ClinicalImpression.finding.basis",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "ClinicalImpression.prognosisCodeableConcept": {
+      "@id": "fhir:ClinicalImpression.prognosisCodeableConcept",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.prognosisReference": {
+      "@id": "fhir:ClinicalImpression.prognosisReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.supportingInfo": {
+      "@id": "fhir:ClinicalImpression.supportingInfo",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ClinicalImpression.note": {
+      "@id": "fhir:ClinicalImpression.note",
+      "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

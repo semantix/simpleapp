@@ -1,0 +1,234 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.identifier": {
+      "@id": "fhir:Invoice.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.status": {
+      "@id": "fhir:Invoice.status"
+    },
+    "Invoice.cancelledReason": {
+      "@id": "fhir:Invoice.cancelledReason",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.type": {
+      "@id": "fhir:Invoice.type",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.subject": {
+      "@id": "fhir:Invoice.subject",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.recipient": {
+      "@id": "fhir:Invoice.recipient",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.date": {
+      "@id": "fhir:Invoice.date",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.participant": {
+      "@id": "fhir:Invoice.participant",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.participant.role": {
+          "@id": "fhir:Invoice.participant.role",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.participant.actor": {
+          "@id": "fhir:Invoice.participant.actor",
+          "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Invoice.issuer": {
+      "@id": "fhir:Invoice.issuer",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.account": {
+      "@id": "fhir:Invoice.account",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.lineItem": {
+      "@id": "fhir:Invoice.lineItem",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.lineItem.sequence": {
+          "@id": "fhir:Invoice.lineItem.sequence",
+          "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.lineItem.chargeItemReference": {
+          "@id": "fhir:Invoice.lineItem.chargeItemReference",
+          "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.lineItem.chargeItemCodeableConcept": {
+          "@id": "fhir:Invoice.lineItem.chargeItemCodeableConcept",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.lineItem.priceComponent": {
+          "@id": "fhir:Invoice.lineItem.priceComponent",
+          "@context": {
+            "Element.id": {
+              "@id": "fhir:Element.id",
+              "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+            },
+            "Element.extension": {
+              "@id": "fhir:Element.extension",
+              "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+            },
+            "BackboneElement.modifierExtension": {
+              "@id": "fhir:BackboneElement.modifierExtension",
+              "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+            },
+            "Invoice.lineItem.priceComponent.type": {
+              "@id": "fhir:Invoice.lineItem.priceComponent.type"
+            },
+            "Invoice.lineItem.priceComponent.code": {
+              "@id": "fhir:Invoice.lineItem.priceComponent.code",
+              "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+            },
+            "Invoice.lineItem.priceComponent.factor": {
+              "@id": "fhir:Invoice.lineItem.priceComponent.factor",
+              "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+            },
+            "Invoice.lineItem.priceComponent.amount": {
+              "@id": "fhir:Invoice.lineItem.priceComponent.amount",
+              "@context": "http://uu3.org/fhir/Money-R4-jsonld-1.1-context.jsonld"
+            },
+            "index": {
+              "@id": "fhir:index",
+              "@type": "http://www.w3.org/2001/XMLSchema#integer"
+            }
+          }
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Invoice.totalPriceComponent": {
+      "@id": "fhir:Invoice.totalPriceComponent",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.lineItem.priceComponent.type": {
+          "@id": "fhir:Invoice.lineItem.priceComponent.type"
+        },
+        "Invoice.lineItem.priceComponent.code": {
+          "@id": "fhir:Invoice.lineItem.priceComponent.code",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.lineItem.priceComponent.factor": {
+          "@id": "fhir:Invoice.lineItem.priceComponent.factor",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "Invoice.lineItem.priceComponent.amount": {
+          "@id": "fhir:Invoice.lineItem.priceComponent.amount",
+          "@context": "http://uu3.org/fhir/Money-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Invoice.totalNet": {
+      "@id": "fhir:Invoice.totalNet",
+      "@context": "http://uu3.org/fhir/Money-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.totalGross": {
+      "@id": "fhir:Invoice.totalGross",
+      "@context": "http://uu3.org/fhir/Money-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.paymentTerms": {
+      "@id": "fhir:Invoice.paymentTerms",
+      "@context": "http://uu3.org/fhir/markdown-R4-jsonld-1.1-context.jsonld"
+    },
+    "Invoice.note": {
+      "@id": "fhir:Invoice.note",
+      "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

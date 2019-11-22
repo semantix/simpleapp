@@ -1,0 +1,176 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.identifier": {
+      "@id": "fhir:Location.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.status": {
+      "@id": "fhir:Location.status"
+    },
+    "Location.operationalStatus": {
+      "@id": "fhir:Location.operationalStatus",
+      "@context": "http://uu3.org/fhir/Coding-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.name": {
+      "@id": "fhir:Location.name",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.alias": {
+      "@id": "fhir:Location.alias",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.description": {
+      "@id": "fhir:Location.description",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.mode": {
+      "@id": "fhir:Location.mode"
+    },
+    "Location.type": {
+      "@id": "fhir:Location.type",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.telecom": {
+      "@id": "fhir:Location.telecom",
+      "@context": "http://uu3.org/fhir/ContactPoint-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.address": {
+      "@id": "fhir:Location.address",
+      "@context": "http://uu3.org/fhir/Address-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.physicalType": {
+      "@id": "fhir:Location.physicalType",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.position": {
+      "@id": "fhir:Location.position",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Location.position.longitude": {
+          "@id": "fhir:Location.position.longitude",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "Location.position.latitude": {
+          "@id": "fhir:Location.position.latitude",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "Location.position.altitude": {
+          "@id": "fhir:Location.position.altitude",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Location.managingOrganization": {
+      "@id": "fhir:Location.managingOrganization",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.partOf": {
+      "@id": "fhir:Location.partOf",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.hoursOfOperation": {
+      "@id": "fhir:Location.hoursOfOperation",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Location.hoursOfOperation.daysOfWeek": {
+          "@id": "fhir:Location.hoursOfOperation.daysOfWeek"
+        },
+        "Location.hoursOfOperation.allDay": {
+          "@id": "fhir:Location.hoursOfOperation.allDay",
+          "@context": "http://uu3.org/fhir/boolean-R4-jsonld-1.1-context.jsonld"
+        },
+        "Location.hoursOfOperation.openingTime": {
+          "@id": "fhir:Location.hoursOfOperation.openingTime",
+          "@context": "http://uu3.org/fhir/time-R4-jsonld-1.1-context.jsonld"
+        },
+        "Location.hoursOfOperation.closingTime": {
+          "@id": "fhir:Location.hoursOfOperation.closingTime",
+          "@context": "http://uu3.org/fhir/time-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Location.availabilityExceptions": {
+      "@id": "fhir:Location.availabilityExceptions",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Location.endpoint": {
+      "@id": "fhir:Location.endpoint",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

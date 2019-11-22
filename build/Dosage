@@ -1,0 +1,118 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "BackboneElement.modifierExtension": {
+      "@id": "fhir:BackboneElement.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.sequence": {
+      "@id": "fhir:Dosage.sequence",
+      "@context": "http://uu3.org/fhir/integer-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.text": {
+      "@id": "fhir:Dosage.text",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.additionalInstruction": {
+      "@id": "fhir:Dosage.additionalInstruction",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.patientInstruction": {
+      "@id": "fhir:Dosage.patientInstruction",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.timing": {
+      "@id": "fhir:Dosage.timing",
+      "@context": "http://uu3.org/fhir/Timing-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.asNeededBoolean": {
+      "@id": "fhir:Dosage.asNeededBoolean",
+      "@context": "http://uu3.org/fhir/boolean-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.asNeededCodeableConcept": {
+      "@id": "fhir:Dosage.asNeededCodeableConcept",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.site": {
+      "@id": "fhir:Dosage.site",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.route": {
+      "@id": "fhir:Dosage.route",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.method": {
+      "@id": "fhir:Dosage.method",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.doseAndRate": {
+      "@id": "fhir:Dosage.doseAndRate",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Dosage.doseAndRate.type": {
+          "@id": "fhir:Dosage.doseAndRate.type",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "Dosage.doseAndRate.doseRange": {
+          "@id": "fhir:Dosage.doseAndRate.doseRange",
+          "@context": "http://uu3.org/fhir/Range-R4-jsonld-1.1-context.jsonld"
+        },
+        "Dosage.doseAndRate.doseQuantity": {
+          "@id": "fhir:Dosage.doseAndRate.doseQuantity",
+          "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "Dosage.doseAndRate.rateRatio": {
+          "@id": "fhir:Dosage.doseAndRate.rateRatio",
+          "@context": "http://uu3.org/fhir/Ratio-R4-jsonld-1.1-context.jsonld"
+        },
+        "Dosage.doseAndRate.rateRange": {
+          "@id": "fhir:Dosage.doseAndRate.rateRange",
+          "@context": "http://uu3.org/fhir/Range-R4-jsonld-1.1-context.jsonld"
+        },
+        "Dosage.doseAndRate.rateQuantity": {
+          "@id": "fhir:Dosage.doseAndRate.rateQuantity",
+          "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Dosage.maxDosePerPeriod": {
+      "@id": "fhir:Dosage.maxDosePerPeriod",
+      "@context": "http://uu3.org/fhir/Ratio-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.maxDosePerAdministration": {
+      "@id": "fhir:Dosage.maxDosePerAdministration",
+      "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+    },
+    "Dosage.maxDosePerLifetime": {
+      "@id": "fhir:Dosage.maxDosePerLifetime",
+      "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

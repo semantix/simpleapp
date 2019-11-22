@@ -1,0 +1,190 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.identifier": {
+      "@id": "fhir:NutritionIntake.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.basedOn": {
+      "@id": "fhir:NutritionIntake.basedOn",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.partOf": {
+      "@id": "fhir:NutritionIntake.partOf",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.status": {
+      "@id": "fhir:NutritionIntake.status"
+    },
+    "NutritionIntake.statusReason": {
+      "@id": "fhir:NutritionIntake.statusReason",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.category": {
+      "@id": "fhir:NutritionIntake.category",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.consumedItem": {
+      "@id": "fhir:NutritionIntake.consumedItem",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.consumedItem.type": {
+          "@id": "fhir:NutritionIntake.consumedItem.type",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.consumedItem.nutritionProduct": {
+          "@id": "fhir:NutritionIntake.consumedItem.nutritionProduct",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.consumedItem.schedule": {
+          "@id": "fhir:NutritionIntake.consumedItem.schedule",
+          "@context": "http://uu3.org/fhir/Timing-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.consumedItem.amount": {
+          "@id": "fhir:NutritionIntake.consumedItem.amount",
+          "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.consumedItem.rate": {
+          "@id": "fhir:NutritionIntake.consumedItem.rate",
+          "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.consumedItem.notConsumed": {
+          "@id": "fhir:NutritionIntake.consumedItem.notConsumed",
+          "@context": "http://uu3.org/fhir/boolean-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.consumedItem.notConsumedReason": {
+          "@id": "fhir:NutritionIntake.consumedItem.notConsumedReason",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "NutritionIntake.ingredientLabel": {
+      "@id": "fhir:NutritionIntake.ingredientLabel",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.ingredientLabel.nutrient": {
+          "@id": "fhir:NutritionIntake.ingredientLabel.nutrient",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "NutritionIntake.ingredientLabel.amount": {
+          "@id": "fhir:NutritionIntake.ingredientLabel.amount",
+          "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "NutritionIntake.subject": {
+      "@id": "fhir:NutritionIntake.subject",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.encounter": {
+      "@id": "fhir:NutritionIntake.encounter",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.effectiveDateTime": {
+      "@id": "fhir:NutritionIntake.effectiveDateTime",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.effectivePeriod": {
+      "@id": "fhir:NutritionIntake.effectivePeriod",
+      "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.dateAsserted": {
+      "@id": "fhir:NutritionIntake.dateAsserted",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.informationSource": {
+      "@id": "fhir:NutritionIntake.informationSource",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.derivedFrom": {
+      "@id": "fhir:NutritionIntake.derivedFrom",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.reasonCode": {
+      "@id": "fhir:NutritionIntake.reasonCode",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.reasonReference": {
+      "@id": "fhir:NutritionIntake.reasonReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "NutritionIntake.note": {
+      "@id": "fhir:NutritionIntake.note",
+      "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

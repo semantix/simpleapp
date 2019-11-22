@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "SampledData.origin": {
+      "@id": "fhir:SampledData.origin",
+      "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+    },
+    "SampledData.period": {
+      "@id": "fhir:SampledData.period",
+      "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+    },
+    "SampledData.factor": {
+      "@id": "fhir:SampledData.factor",
+      "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+    },
+    "SampledData.lowerLimit": {
+      "@id": "fhir:SampledData.lowerLimit",
+      "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+    },
+    "SampledData.upperLimit": {
+      "@id": "fhir:SampledData.upperLimit",
+      "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+    },
+    "SampledData.dimensions": {
+      "@id": "fhir:SampledData.dimensions",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "SampledData.data": {
+      "@id": "fhir:SampledData.data",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

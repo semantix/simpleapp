@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "BackboneElement.modifierExtension": {
+      "@id": "fhir:BackboneElement.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "Timing.event": {
+      "@id": "fhir:Timing.event",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "Timing.repeat": {
+      "@id": "fhir:Timing.repeat",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.boundsDuration": {
+          "@id": "fhir:Timing.repeat.boundsDuration",
+          "@context": "http://uu3.org/fhir/Duration-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.boundsRange": {
+          "@id": "fhir:Timing.repeat.boundsRange",
+          "@context": "http://uu3.org/fhir/Range-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.boundsPeriod": {
+          "@id": "fhir:Timing.repeat.boundsPeriod",
+          "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.count": {
+          "@id": "fhir:Timing.repeat.count",
+          "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.countMax": {
+          "@id": "fhir:Timing.repeat.countMax",
+          "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.duration": {
+          "@id": "fhir:Timing.repeat.duration",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.durationMax": {
+          "@id": "fhir:Timing.repeat.durationMax",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.durationUnit": {
+          "@id": "fhir:Timing.repeat.durationUnit"
+        },
+        "Timing.repeat.frequency": {
+          "@id": "fhir:Timing.repeat.frequency",
+          "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.frequencyMax": {
+          "@id": "fhir:Timing.repeat.frequencyMax",
+          "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.period": {
+          "@id": "fhir:Timing.repeat.period",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.periodMax": {
+          "@id": "fhir:Timing.repeat.periodMax",
+          "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.periodUnit": {
+          "@id": "fhir:Timing.repeat.periodUnit"
+        },
+        "Timing.repeat.dayOfWeek": {
+          "@id": "fhir:Timing.repeat.dayOfWeek"
+        },
+        "Timing.repeat.timeOfDay": {
+          "@id": "fhir:Timing.repeat.timeOfDay",
+          "@context": "http://uu3.org/fhir/time-R4-jsonld-1.1-context.jsonld"
+        },
+        "Timing.repeat.when": {
+          "@id": "fhir:Timing.repeat.when"
+        },
+        "Timing.repeat.offset": {
+          "@id": "fhir:Timing.repeat.offset",
+          "@context": "http://uu3.org/fhir/unsignedInt-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "Timing.code": {
+      "@id": "fhir:Timing.code",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

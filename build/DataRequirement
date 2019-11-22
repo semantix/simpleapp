@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DataRequirement.type": {
+      "@id": "fhir:DataRequirement.type"
+    },
+    "DataRequirement.profile": {
+      "@id": "fhir:DataRequirement.profile",
+      "@context": "http://uu3.org/fhir/canonical-R4-jsonld-1.1-context.jsonld"
+    },
+    "DataRequirement.subjectCodeableConcept": {
+      "@id": "fhir:DataRequirement.subjectCodeableConcept",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "DataRequirement.subjectReference": {
+      "@id": "fhir:DataRequirement.subjectReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "DataRequirement.mustSupport": {
+      "@id": "fhir:DataRequirement.mustSupport",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "DataRequirement.codeFilter": {
+      "@id": "fhir:DataRequirement.codeFilter",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.codeFilter.path": {
+          "@id": "fhir:DataRequirement.codeFilter.path",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.codeFilter.searchParam": {
+          "@id": "fhir:DataRequirement.codeFilter.searchParam",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.codeFilter.valueSet": {
+          "@id": "fhir:DataRequirement.codeFilter.valueSet",
+          "@context": "http://uu3.org/fhir/canonical-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.codeFilter.code": {
+          "@id": "fhir:DataRequirement.codeFilter.code",
+          "@context": "http://uu3.org/fhir/Coding-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "DataRequirement.dateFilter": {
+      "@id": "fhir:DataRequirement.dateFilter",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.dateFilter.path": {
+          "@id": "fhir:DataRequirement.dateFilter.path",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.dateFilter.searchParam": {
+          "@id": "fhir:DataRequirement.dateFilter.searchParam",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.dateFilter.valueDateTime": {
+          "@id": "fhir:DataRequirement.dateFilter.valueDateTime",
+          "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.dateFilter.valuePeriod": {
+          "@id": "fhir:DataRequirement.dateFilter.valuePeriod",
+          "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.dateFilter.valueDuration": {
+          "@id": "fhir:DataRequirement.dateFilter.valueDuration",
+          "@context": "http://uu3.org/fhir/Duration-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "DataRequirement.limit": {
+      "@id": "fhir:DataRequirement.limit",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "DataRequirement.sort": {
+      "@id": "fhir:DataRequirement.sort",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.sort.path": {
+          "@id": "fhir:DataRequirement.sort.path",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "DataRequirement.sort.direction": {
+          "@id": "fhir:DataRequirement.sort.direction"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

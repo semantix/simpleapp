@@ -1,0 +1,170 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.identifier": {
+      "@id": "fhir:AllergyIntolerance.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.clinicalStatus": {
+      "@id": "fhir:AllergyIntolerance.clinicalStatus",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.verificationStatus": {
+      "@id": "fhir:AllergyIntolerance.verificationStatus",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.type": {
+      "@id": "fhir:AllergyIntolerance.type"
+    },
+    "AllergyIntolerance.category": {
+      "@id": "fhir:AllergyIntolerance.category"
+    },
+    "AllergyIntolerance.criticality": {
+      "@id": "fhir:AllergyIntolerance.criticality"
+    },
+    "AllergyIntolerance.code": {
+      "@id": "fhir:AllergyIntolerance.code",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.patient": {
+      "@id": "fhir:AllergyIntolerance.patient",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.encounter": {
+      "@id": "fhir:AllergyIntolerance.encounter",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.onsetDateTime": {
+      "@id": "fhir:AllergyIntolerance.onsetDateTime",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.onsetAge": {
+      "@id": "fhir:AllergyIntolerance.onsetAge",
+      "@context": "http://uu3.org/fhir/Age-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.onsetPeriod": {
+      "@id": "fhir:AllergyIntolerance.onsetPeriod",
+      "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.onsetRange": {
+      "@id": "fhir:AllergyIntolerance.onsetRange",
+      "@context": "http://uu3.org/fhir/Range-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.onsetString": {
+      "@id": "fhir:AllergyIntolerance.onsetString",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.recordedDate": {
+      "@id": "fhir:AllergyIntolerance.recordedDate",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.recorder": {
+      "@id": "fhir:AllergyIntolerance.recorder",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.asserter": {
+      "@id": "fhir:AllergyIntolerance.asserter",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.lastOccurrence": {
+      "@id": "fhir:AllergyIntolerance.lastOccurrence",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.note": {
+      "@id": "fhir:AllergyIntolerance.note",
+      "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+    },
+    "AllergyIntolerance.reaction": {
+      "@id": "fhir:AllergyIntolerance.reaction",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "AllergyIntolerance.reaction.substance": {
+          "@id": "fhir:AllergyIntolerance.reaction.substance",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "AllergyIntolerance.reaction.manifestation": {
+          "@id": "fhir:AllergyIntolerance.reaction.manifestation",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "AllergyIntolerance.reaction.description": {
+          "@id": "fhir:AllergyIntolerance.reaction.description",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "AllergyIntolerance.reaction.onset": {
+          "@id": "fhir:AllergyIntolerance.reaction.onset",
+          "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+        },
+        "AllergyIntolerance.reaction.severity": {
+          "@id": "fhir:AllergyIntolerance.reaction.severity"
+        },
+        "AllergyIntolerance.reaction.exposureRoute": {
+          "@id": "fhir:AllergyIntolerance.reaction.exposureRoute",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "AllergyIntolerance.reaction.note": {
+          "@id": "fhir:AllergyIntolerance.reaction.note",
+          "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

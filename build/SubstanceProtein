@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "SubstanceProtein.sequenceType": {
+      "@id": "fhir:SubstanceProtein.sequenceType",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "SubstanceProtein.numberOfSubunits": {
+      "@id": "fhir:SubstanceProtein.numberOfSubunits",
+      "@context": "http://uu3.org/fhir/integer-R4-jsonld-1.1-context.jsonld"
+    },
+    "SubstanceProtein.disulfideLinkage": {
+      "@id": "fhir:SubstanceProtein.disulfideLinkage",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "SubstanceProtein.subunit": {
+      "@id": "fhir:SubstanceProtein.subunit",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.subunit": {
+          "@id": "fhir:SubstanceProtein.subunit.subunit",
+          "@context": "http://uu3.org/fhir/integer-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.sequence": {
+          "@id": "fhir:SubstanceProtein.subunit.sequence",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.length": {
+          "@id": "fhir:SubstanceProtein.subunit.length",
+          "@context": "http://uu3.org/fhir/integer-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.sequenceAttachment": {
+          "@id": "fhir:SubstanceProtein.subunit.sequenceAttachment",
+          "@context": "http://uu3.org/fhir/Attachment-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.nTerminalModificationId": {
+          "@id": "fhir:SubstanceProtein.subunit.nTerminalModificationId",
+          "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.nTerminalModification": {
+          "@id": "fhir:SubstanceProtein.subunit.nTerminalModification",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.cTerminalModificationId": {
+          "@id": "fhir:SubstanceProtein.subunit.cTerminalModificationId",
+          "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+        },
+        "SubstanceProtein.subunit.cTerminalModification": {
+          "@id": "fhir:SubstanceProtein.subunit.cTerminalModification",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

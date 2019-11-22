@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.identifier": {
+      "@id": "fhir:ImmunizationEvaluation.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.status": {
+      "@id": "fhir:ImmunizationEvaluation.status"
+    },
+    "ImmunizationEvaluation.patient": {
+      "@id": "fhir:ImmunizationEvaluation.patient",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.date": {
+      "@id": "fhir:ImmunizationEvaluation.date",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.authority": {
+      "@id": "fhir:ImmunizationEvaluation.authority",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.targetDisease": {
+      "@id": "fhir:ImmunizationEvaluation.targetDisease",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.immunizationEvent": {
+      "@id": "fhir:ImmunizationEvaluation.immunizationEvent",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.doseStatus": {
+      "@id": "fhir:ImmunizationEvaluation.doseStatus",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.doseStatusReason": {
+      "@id": "fhir:ImmunizationEvaluation.doseStatusReason",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.description": {
+      "@id": "fhir:ImmunizationEvaluation.description",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.series": {
+      "@id": "fhir:ImmunizationEvaluation.series",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.doseNumberPositiveInt": {
+      "@id": "fhir:ImmunizationEvaluation.doseNumberPositiveInt",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.doseNumberString": {
+      "@id": "fhir:ImmunizationEvaluation.doseNumberString",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.seriesDosesPositiveInt": {
+      "@id": "fhir:ImmunizationEvaluation.seriesDosesPositiveInt",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "ImmunizationEvaluation.seriesDosesString": {
+      "@id": "fhir:ImmunizationEvaluation.seriesDosesString",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

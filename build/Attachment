@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.contentType": {
+      "@id": "fhir:Attachment.contentType"
+    },
+    "Attachment.language": {
+      "@id": "fhir:Attachment.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.data": {
+      "@id": "fhir:Attachment.data",
+      "@context": "http://uu3.org/fhir/base64Binary-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.url": {
+      "@id": "fhir:Attachment.url",
+      "@context": "http://uu3.org/fhir/url-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.size": {
+      "@id": "fhir:Attachment.size",
+      "@context": "http://uu3.org/fhir/unsignedInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.hash": {
+      "@id": "fhir:Attachment.hash",
+      "@context": "http://uu3.org/fhir/base64Binary-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.title": {
+      "@id": "fhir:Attachment.title",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.creation": {
+      "@id": "fhir:Attachment.creation",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.height": {
+      "@id": "fhir:Attachment.height",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.width": {
+      "@id": "fhir:Attachment.width",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.frames": {
+      "@id": "fhir:Attachment.frames",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.duration": {
+      "@id": "fhir:Attachment.duration",
+      "@context": "http://uu3.org/fhir/decimal-R4-jsonld-1.1-context.jsonld"
+    },
+    "Attachment.pages": {
+      "@id": "fhir:Attachment.pages",
+      "@context": "http://uu3.org/fhir/positiveInt-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

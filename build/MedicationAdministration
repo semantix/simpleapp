@@ -1,0 +1,214 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "resourceType": {
+      "@id": "rdf:type",
+      "@type": "@id"
+    },
+    "Resource.id": {
+      "@id": "fhir:Resource.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.meta": {
+      "@id": "fhir:Resource.meta",
+      "@context": "http://uu3.org/fhir/Meta-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.implicitRules": {
+      "@id": "fhir:Resource.implicitRules",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "Resource.language": {
+      "@id": "fhir:Resource.language",
+      "@context": "http://uu3.org/fhir/code-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.text": {
+      "@id": "fhir:DomainResource.text",
+      "@context": "http://uu3.org/fhir/Narrative-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.contained": {
+      "@id": "fhir:DomainResource.contained",
+      "@context": "http://uu3.org/fhir/Resource-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.extension": {
+      "@id": "fhir:DomainResource.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "DomainResource.modifierExtension": {
+      "@id": "fhir:DomainResource.modifierExtension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.identifier": {
+      "@id": "fhir:MedicationAdministration.identifier",
+      "@context": "http://uu3.org/fhir/Identifier-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.instantiatesCanonical": {
+      "@id": "fhir:MedicationAdministration.instantiatesCanonical",
+      "@context": "http://uu3.org/fhir/canonical-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.instantiatesUri": {
+      "@id": "fhir:MedicationAdministration.instantiatesUri",
+      "@context": "http://uu3.org/fhir/uri-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.basedOn": {
+      "@id": "fhir:MedicationAdministration.basedOn",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.partOf": {
+      "@id": "fhir:MedicationAdministration.partOf",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.status": {
+      "@id": "fhir:MedicationAdministration.status"
+    },
+    "MedicationAdministration.statusReason": {
+      "@id": "fhir:MedicationAdministration.statusReason",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.category": {
+      "@id": "fhir:MedicationAdministration.category",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.medicationCodeableConcept": {
+      "@id": "fhir:MedicationAdministration.medicationCodeableConcept",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.medicationReference": {
+      "@id": "fhir:MedicationAdministration.medicationReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.subject": {
+      "@id": "fhir:MedicationAdministration.subject",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.encounter": {
+      "@id": "fhir:MedicationAdministration.encounter",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.supportingInformation": {
+      "@id": "fhir:MedicationAdministration.supportingInformation",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.occurenceDateTime": {
+      "@id": "fhir:MedicationAdministration.occurenceDateTime",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.occurencePeriod": {
+      "@id": "fhir:MedicationAdministration.occurencePeriod",
+      "@context": "http://uu3.org/fhir/Period-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.recorded": {
+      "@id": "fhir:MedicationAdministration.recorded",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.performer": {
+      "@id": "fhir:MedicationAdministration.performer",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.performer.function": {
+          "@id": "fhir:MedicationAdministration.performer.function",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.performer.actor": {
+          "@id": "fhir:MedicationAdministration.performer.actor",
+          "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "MedicationAdministration.reasonCode": {
+      "@id": "fhir:MedicationAdministration.reasonCode",
+      "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.reasonReference": {
+      "@id": "fhir:MedicationAdministration.reasonReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.request": {
+      "@id": "fhir:MedicationAdministration.request",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.device": {
+      "@id": "fhir:MedicationAdministration.device",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.note": {
+      "@id": "fhir:MedicationAdministration.note",
+      "@context": "http://uu3.org/fhir/Annotation-R4-jsonld-1.1-context.jsonld"
+    },
+    "MedicationAdministration.dosage": {
+      "@id": "fhir:MedicationAdministration.dosage",
+      "@context": {
+        "Element.id": {
+          "@id": "fhir:Element.id",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "Element.extension": {
+          "@id": "fhir:Element.extension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "BackboneElement.modifierExtension": {
+          "@id": "fhir:BackboneElement.modifierExtension",
+          "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.dosage.text": {
+          "@id": "fhir:MedicationAdministration.dosage.text",
+          "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.dosage.site": {
+          "@id": "fhir:MedicationAdministration.dosage.site",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.dosage.route": {
+          "@id": "fhir:MedicationAdministration.dosage.route",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.dosage.method": {
+          "@id": "fhir:MedicationAdministration.dosage.method",
+          "@context": "http://uu3.org/fhir/CodeableConcept-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.dosage.dose": {
+          "@id": "fhir:MedicationAdministration.dosage.dose",
+          "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.dosage.rateRatio": {
+          "@id": "fhir:MedicationAdministration.dosage.rateRatio",
+          "@context": "http://uu3.org/fhir/Ratio-R4-jsonld-1.1-context.jsonld"
+        },
+        "MedicationAdministration.dosage.rateQuantity": {
+          "@id": "fhir:MedicationAdministration.dosage.rateQuantity",
+          "@context": "http://uu3.org/fhir/SimpleQuantity-R4-jsonld-1.1-context.jsonld"
+        },
+        "index": {
+          "@id": "fhir:index",
+          "@type": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      }
+    },
+    "MedicationAdministration.eventHistory": {
+      "@id": "fhir:MedicationAdministration.eventHistory",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

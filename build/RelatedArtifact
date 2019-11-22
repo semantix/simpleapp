@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "RelatedArtifact.type": {
+      "@id": "fhir:RelatedArtifact.type"
+    },
+    "RelatedArtifact.label": {
+      "@id": "fhir:RelatedArtifact.label",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "RelatedArtifact.display": {
+      "@id": "fhir:RelatedArtifact.display",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "RelatedArtifact.citation": {
+      "@id": "fhir:RelatedArtifact.citation",
+      "@context": "http://uu3.org/fhir/markdown-R4-jsonld-1.1-context.jsonld"
+    },
+    "RelatedArtifact.url": {
+      "@id": "fhir:RelatedArtifact.url",
+      "@context": "http://uu3.org/fhir/url-R4-jsonld-1.1-context.jsonld"
+    },
+    "RelatedArtifact.document": {
+      "@id": "fhir:RelatedArtifact.document",
+      "@context": "http://uu3.org/fhir/Attachment-R4-jsonld-1.1-context.jsonld"
+    },
+    "RelatedArtifact.resource": {
+      "@id": "fhir:RelatedArtifact.resource",
+      "@context": "http://uu3.org/fhir/canonical-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}

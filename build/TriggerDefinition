@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "http://janeirodigital.github.io/nhs-care-plan/flat-FHIR.ttl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fhir": "http://hl7.org/fhir/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "Element.id": {
+      "@id": "fhir:Element.id",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "Element.extension": {
+      "@id": "fhir:Element.extension",
+      "@context": "http://uu3.org/fhir/Extension-R4-jsonld-1.1-context.jsonld"
+    },
+    "TriggerDefinition.type": {
+      "@id": "fhir:TriggerDefinition.type"
+    },
+    "TriggerDefinition.name": {
+      "@id": "fhir:TriggerDefinition.name",
+      "@context": "http://uu3.org/fhir/string-R4-jsonld-1.1-context.jsonld"
+    },
+    "TriggerDefinition.timingTiming": {
+      "@id": "fhir:TriggerDefinition.timingTiming",
+      "@context": "http://uu3.org/fhir/Timing-R4-jsonld-1.1-context.jsonld"
+    },
+    "TriggerDefinition.timingReference": {
+      "@id": "fhir:TriggerDefinition.timingReference",
+      "@context": "http://uu3.org/fhir/Reference-R4-jsonld-1.1-context.jsonld"
+    },
+    "TriggerDefinition.timingDate": {
+      "@id": "fhir:TriggerDefinition.timingDate",
+      "@context": "http://uu3.org/fhir/date-R4-jsonld-1.1-context.jsonld"
+    },
+    "TriggerDefinition.timingDateTime": {
+      "@id": "fhir:TriggerDefinition.timingDateTime",
+      "@context": "http://uu3.org/fhir/dateTime-R4-jsonld-1.1-context.jsonld"
+    },
+    "TriggerDefinition.data": {
+      "@id": "fhir:TriggerDefinition.data",
+      "@context": "http://uu3.org/fhir/DataRequirement-R4-jsonld-1.1-context.jsonld"
+    },
+    "TriggerDefinition.condition": {
+      "@id": "fhir:TriggerDefinition.condition",
+      "@context": "http://uu3.org/fhir/Expression-R4-jsonld-1.1-context.jsonld"
+    },
+    "index": {
+      "@id": "fhir:index",
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    }
+  }
+}
