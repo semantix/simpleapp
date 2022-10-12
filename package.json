@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@shexjs/cli": "^1.0.0-alpha.6",
+    "@shexjs/cli": "^1.0.0-alpha.24",
     "@shexjs/parser": "^1.0.0-alpha.6",
-    "jsonld": "^1.8.1",
+    "jsonld": "^8.1.0",
     "request-promise": "^4.2.5"
   }
 }
